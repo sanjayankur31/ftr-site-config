@@ -1,0 +1,10 @@
+title: //h1[contains(concat(' ',normalize-space(@class),' '),' svTitle ')]
+date: //dl[contains(concat(' ',normalize-space(@class),' '),' articleDates ')]//dd
+body: //div[@id='frag_2']
+single_page_link:
+test_url: http://www.sciencedirect.com/science/article/pii/S1046202399907740
+prune: yes
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' publicationHead ')]
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' els-header-sub-nav-container ')]
+strip: //div[@id='articleToolbar']
+strip: //div[contains(concat(' ',normalize-space(@class),' '),' els-footer ')]
